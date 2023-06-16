@@ -1,0 +1,4 @@
+/packages/*
+!packages/php-xdebug.tar.gz
+/php-xdebug*
+/xdebug*
