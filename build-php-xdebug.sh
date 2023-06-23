@@ -82,7 +82,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-xdebug \
   || { echo "configure failed"; exit 1; }
 
-make \
+make -j$(nproc) \
   || { echo "make failed"; exit 1; }
 
 destdir=${BASE}/${packagedir}
